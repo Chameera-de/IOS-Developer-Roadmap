@@ -1,6 +1,6 @@
 ![Header image](headerImage.png)
 # 🚀 iOS Developer Roadmap 
-Roadmap to becoming an iOS developer in 2020.
+Roadmap to becoming an iOS developer in 2021.
 
 ## ☝️ What is it?
 This is a tree-like compilation of topics highly relevant to iOS development. Both image and text version are generated from human readable content file.
@@ -15,7 +15,7 @@ The roadmap will be helpul for:
 
 
 ## 👌 Why these topics?
-See [this article](https://medium.com/@borlov/c9a24f413457) explaining selection of topics.
+See [this article]() explaining selection of topics.
 
 ## 👨‍🎓 How to use this roadmap
 1. Find a topic you want to study.
@@ -39,7 +39,7 @@ Roadmap of essential topics. Roadmap for all topics is [here.](RoadmapProject/Sc
 
 - add new topics to `Content.yml`
 - add missing study materials to `Content.yml`
-- throw ideas at me on [![Twitter: @Chameera.de](https://img.shields.io/badge/twitter-@Bohdan_Orlov-4d66b3.svg?style=flat)](https://twitter.com/silva_chameera)
+- throw ideas at me on [![Twitter: @Chameera.de](https://img.shields.io/badge/twitter-@Chameera_De-4d66b3.svg?style=flat)](https://twitter.com/silva_chameera)
 
 
 [The complete contribution guide.](HowTo/HOWTOPR.md)
