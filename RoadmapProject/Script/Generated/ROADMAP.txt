@@ -1,0 +1,471 @@
+@startuml
+left to right direction
+(iOS Developer) as (iOS Developer) <<^>> 
+(Practical knowledge) as (iOS Developer->Practical knowledge) <<^>> 
+(Getting started) as (iOS Developer->Practical knowledge->Getting started)
+(First pet project ideas) as (iOS Developer->Practical knowledge->Getting started->First pet project ideas)
+(Languages) as (iOS Developer->Practical knowledge->Languages) <<^>> 
+(Objective-C) as (iOS Developer->Practical knowledge->Languages->Objective-C) <<^>> 
+(Blocks) as (iOS Developer->Practical knowledge->Languages->Objective-C->Blocks) <<^>> 
+(Memory Management) as (iOS Developer->Practical knowledge->Languages->Objective-C->Blocks->Memory Management)
+(KVC) as (iOS Developer->Practical knowledge->Languages->Objective-C->KVC)
+(KVO) as (iOS Developer->Practical knowledge->Languages->Objective-C->KVO)
+(Toll-free bridging) as (iOS Developer->Practical knowledge->Languages->Objective-C->Toll-free bridging)
+(Runtime) as (iOS Developer->Practical knowledge->Languages->Objective-C->Runtime) <<^>> 
+(Method messaging) as (iOS Developer->Practical knowledge->Languages->Objective-C->Runtime->Method messaging)
+(NSZombies and KVO implementation) as (iOS Developer->Practical knowledge->Languages->Objective-C->Runtime->NSZombies and KVO implementation)
+(Swizzling) as (iOS Developer->Practical knowledge->Languages->Objective-C->Runtime->Swizzling)
+(Swift) as (iOS Developer->Practical knowledge->Languages->Swift) <<^>> 
+(Closures) as (iOS Developer->Practical knowledge->Languages->Swift->Closures)
+(Initializers) as (iOS Developer->Practical knowledge->Languages->Swift->Initializers) <<^>> 
+(Generics) as (iOS Developer->Practical knowledge->Languages->Swift->Generics)
+(Protocols) as (iOS Developer->Practical knowledge->Languages->Swift->Protocols) <<^>> 
+(Structs) as (iOS Developer->Practical knowledge->Languages->Swift->Structs) <<^>> 
+(Enums) as (iOS Developer->Practical knowledge->Languages->Swift->Enums) <<^>> 
+(Runtime) as (iOS Developer->Practical knowledge->Languages->Swift->Runtime)
+(Method dispatch) as (iOS Developer->Practical knowledge->Languages->Swift->Runtime->Method dispatch)
+(Memory management) as (iOS Developer->Practical knowledge->Memory management) <<^>> 
+(Stack and Heap) as (iOS Developer->Practical knowledge->Memory management->Stack and Heap) <<^>> 
+(Value vs Reference type) as (iOS Developer->Practical knowledge->Memory management->Value vs Reference type) <<^>> 
+(MRC) as (iOS Developer->Practical knowledge->Memory management->MRC)
+(ARC) as (iOS Developer->Practical knowledge->Memory management->ARC) <<^>> 
+(Weak references) as (iOS Developer->Practical knowledge->Memory management->ARC->Weak references)
+(Retain cycles) as (iOS Developer->Practical knowledge->Memory management->Retain cycles) <<^>> 
+(Garbage collection) as (iOS Developer->Practical knowledge->Memory management->Garbage collection)
+(Memory leaks) as (iOS Developer->Practical knowledge->Memory management->Memory leaks) <<^>> 
+(Shallow and deep copying) as (iOS Developer->Practical knowledge->Memory management->Shallow and deep copying)
+(Autorelease pool) as (iOS Developer->Practical knowledge->Memory management->Autorelease pool)
+(Multithreading and concurrency) as (iOS Developer->Practical knowledge->Multithreading and concurrency) <<^>> 
+(POSIX and NSThreads) as (iOS Developer->Practical knowledge->Multithreading and concurrency->POSIX and NSThreads)
+(Perform selector family) as (iOS Developer->Practical knowledge->Multithreading and concurrency->Perform selector family)
+(GCD) as (iOS Developer->Practical knowledge->Multithreading and concurrency->GCD) <<^>> 
+(NSOperation[Queue]) as (iOS Developer->Practical knowledge->Multithreading and concurrency->NSOperation[Queue]) <<^>> 
+(Runloop) as (iOS Developer->Practical knowledge->Multithreading and concurrency->Runloop) <<^>> 
+(Synchronization) as (iOS Developer->Practical knowledge->Multithreading and concurrency->Synchronization) <<^>> 
+(Problems) as (iOS Developer->Practical knowledge->Multithreading and concurrency->Problems)
+(Race condition) as (iOS Developer->Practical knowledge->Multithreading and concurrency->Problems->Race condition)
+(Deadlock) as (iOS Developer->Practical knowledge->Multithreading and concurrency->Problems->Deadlock)
+(Readers–writers problem) as (iOS Developer->Practical knowledge->Multithreading and concurrency->Problems->Readers–writers problem)
+(Cocoa Touch) as (iOS Developer->Practical knowledge->Cocoa Touch) <<^>> 
+(UIKit) as (iOS Developer->Practical knowledge->Cocoa Touch->UIKit) <<^>> 
+(UIApplication) as (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->UIApplication) <<^>> 
+(States) as (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->UIApplication->States) <<^>> 
+(UIApplicationDelegate) as (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->UIApplication->UIApplicationDelegate)
+(UIViews) as (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->UIViews) <<^>> 
+(UITableViews) as (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->UIViews->UITableViews) <<^>> 
+(UICollectionViews) as (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->UIViews->UICollectionViews) <<^>> 
+(Layers) as (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->Layers)
+(Layout) as (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->Layout) <<^>> 
+(Frame-based) as (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->Layout->Frame-based) <<^>> 
+(Autolayout) as (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->Layout->Autolayout) <<^>> 
+(UIStackView) as (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->Layout->Autolayout->UIStackView)
+(Animations) as (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->Animations)
+(Transform) as (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->Transform)
+(Navigation) as (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->Navigation) <<^>> 
+(UIViewController) as (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->UIViewController) <<^>> 
+(Lifecycle) as (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->UIViewController->Lifecycle) <<^>> 
+(Foundation) as (iOS Developer->Practical knowledge->Cocoa Touch->Foundation) <<^>> 
+(Notifications vs Delegation vs Observing) as (iOS Developer->Practical knowledge->Cocoa Touch->Foundation->Notifications vs Delegation vs Observing) <<^>> 
+(Collections) as (iOS Developer->Practical knowledge->Cocoa Touch->Foundation->Collections)
+(Networking) as (iOS Developer->Practical knowledge->Cocoa Touch->Foundation->Networking) <<^>> 
+(Serialization) as (iOS Developer->Practical knowledge->Cocoa Touch->Foundation->Serialization) <<^>> 
+(NSCoding) as (iOS Developer->Practical knowledge->Cocoa Touch->Foundation->Serialization->NSCoding)
+(Codable) as (iOS Developer->Practical knowledge->Cocoa Touch->Foundation->Serialization->Codable) <<^>> 
+(JSON) as (iOS Developer->Practical knowledge->Cocoa Touch->Foundation->Serialization->JSON) <<^>> 
+(XML) as (iOS Developer->Practical knowledge->Cocoa Touch->Foundation->Serialization->XML)
+(Protobuf) as (iOS Developer->Practical knowledge->Cocoa Touch->Foundation->Serialization->Protobuf)
+(UserNotifications) as (iOS Developer->Practical knowledge->Cocoa Touch->UserNotifications)
+(Core Location) as (iOS Developer->Practical knowledge->Cocoa Touch->Core Location)
+(Core Motion) as (iOS Developer->Practical knowledge->Cocoa Touch->Core Motion)
+(Work in background mode) as (iOS Developer->Practical knowledge->Cocoa Touch->Work in background mode) <<^>> 
+(Software Architecture) as (iOS Developer->Practical knowledge->Software Architecture) <<^>> 
+(Design Patterns) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns) <<^>> 
+(Cocoa) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa) <<^>> 
+(Abstract Factory) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Abstract Factory)
+(Class cluster) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Abstract Factory->Class cluster)
+(Adapter) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Adapter)
+(Command Pattern) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Command Pattern)
+(Chain of Responsibility) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Chain of Responsibility)
+(Decorator) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Decorator)
+(Delegation) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Decorator->Delegation)
+(Categories) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Decorator->Categories)
+(Facade) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Facade)
+(Memento) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Memento)
+(Observer) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Observer)
+(Proxy) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Proxy)
+(Receptionist) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Receptionist)
+(Singleton) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Singleton)
+(Template Method) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Template Method)
+(MVC) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->MVC)
+(Architectural) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Architectural) <<^>> 
+(MVC) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Architectural->MVC) <<^>> 
+(MVVM) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Architectural->MVVM) <<^>> 
+(MVP) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Architectural->MVP) <<^>> 
+(Clean architecture) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Architectural->Clean architecture) <<^>> 
+(VIPER) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Architectural->Clean architecture->VIPER)
+(RIBs) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Architectural->Clean architecture->RIBs)
+(Coordinators) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Architectural->Coordinators)
+(Creational) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Creational) <<^>> 
+(Factory) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Creational->Factory)
+(Abstract Factory) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Creational->Abstract Factory)
+(Builder) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Creational->Builder)
+(Factory Method) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Creational->Factory Method)
+(Object Pool) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Creational->Object Pool)
+(Prototype) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Creational->Prototype)
+(Singleton) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Creational->Singleton)
+(Structural) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Structural) <<^>> 
+(Adapter) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Structural->Adapter)
+(Bridge) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Structural->Bridge)
+(Composite) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Structural->Composite)
+(Decorator) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Structural->Decorator)
+(Facade) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Structural->Facade)
+(Flyweight) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Structural->Flyweight)
+(Proxy) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Structural->Proxy)
+(Behavioural) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural) <<^>> 
+(Command) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural->Command)
+(Chain of responsibility) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural->Chain of responsibility)
+(Interpreter) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural->Interpreter)
+(Iterator) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural->Iterator)
+(Mediator) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural->Mediator)
+(Memento) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural->Memento)
+(Observer) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural->Observer)
+(State) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural->State)
+(Strategy) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural->Strategy)
+(Visitor) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural->Visitor)
+(Concurrency) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Concurrency)
+(Anti-pattern) as (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Concurrency->Anti-pattern)
+(Design Principles) as (iOS Developer->Practical knowledge->Software Architecture->Design Principles) <<^>> 
+(SOLID) as (iOS Developer->Practical knowledge->Software Architecture->Design Principles->SOLID) <<^>> 
+(Inversion of Control) as (iOS Developer->Practical knowledge->Software Architecture->Design Principles->Inversion of Control) <<^>> 
+(Dependency Injection) as (iOS Developer->Practical knowledge->Software Architecture->Design Principles->Inversion of Control->Dependency Injection) <<^>> 
+(Service Locator) as (iOS Developer->Practical knowledge->Software Architecture->Design Principles->Inversion of Control->Service Locator)
+(Protocol-Oriented Programming) as (iOS Developer->Practical knowledge->Software Architecture->Design Principles->Protocol-Oriented Programming)
+(Dependencies management) as (iOS Developer->Practical knowledge->Dependencies management) <<^>> 
+(Cocoapods) as (iOS Developer->Practical knowledge->Dependencies management->Cocoapods)
+(Carthage) as (iOS Developer->Practical knowledge->Dependencies management->Carthage)
+(Swift Package Manager) as (iOS Developer->Practical knowledge->Dependencies management->Swift Package Manager)
+(Project structure and File/Group organisation) as (iOS Developer->Practical knowledge->Project structure and File/Group organisation)
+(Version Control Systems) as (iOS Developer->Practical knowledge->Version Control Systems) <<^>> 
+(Git) as (iOS Developer->Practical knowledge->Version Control Systems->Git) <<^>> 
+(Debugging) as (iOS Developer->Practical knowledge->Debugging)
+(Instruments) as (iOS Developer->Practical knowledge->Debugging->Instruments)
+(Best practices) as (iOS Developer->Practical knowledge->Debugging->Best practices)
+(Checklists) as (iOS Developer->Practical knowledge->Debugging->Best practices->Checklists)
+(UX) as (iOS Developer->Practical knowledge->UX)
+(Caching and Persistency) as (iOS Developer->Practical knowledge->Caching and Persistency) <<^>> 
+(Core Data) as (iOS Developer->Practical knowledge->Caching and Persistency->Core Data)
+(Realm) as (iOS Developer->Practical knowledge->Caching and Persistency->Realm)
+(YAPDatabase) as (iOS Developer->Practical knowledge->Caching and Persistency->YAPDatabase)
+(Testing) as (iOS Developer->Practical knowledge->Testing) <<^>> 
+(Unit Tests) as (iOS Developer->Practical knowledge->Testing->Unit Tests) <<^>> 
+(Snapshot Tests) as (iOS Developer->Practical knowledge->Testing->Snapshot Tests)
+(Functional test) as (iOS Developer->Practical knowledge->Testing->Functional test)
+(TDD) as (iOS Developer->Practical knowledge->Testing->TDD)
+(BDD) as (iOS Developer->Practical knowledge->Testing->BDD)
+(Performance optimization) as (iOS Developer->Practical knowledge->Performance optimization)
+(Increase FPS) as (iOS Developer->Practical knowledge->Performance optimization->Increase FPS)
+(Decrease memory footprint) as (iOS Developer->Practical knowledge->Performance optimization->Decrease memory footprint)
+(Code signing) as (iOS Developer->Practical knowledge->Code signing)
+(Tools) as (iOS Developer->Practical knowledge->Tools)
+(IDE) as (iOS Developer->Practical knowledge->Tools->IDE)
+(Xcode) as (iOS Developer->Practical knowledge->Tools->IDE->Xcode)
+(Interface Builder) as (iOS Developer->Practical knowledge->Tools->IDE->Xcode->Interface Builder)
+(Swiftlint) as (iOS Developer->Practical knowledge->Tools->Swiftlint)
+(Sourcery) as (iOS Developer->Practical knowledge->Tools->Sourcery)
+(Fastlane) as (iOS Developer->Practical knowledge->Tools->Fastlane)
+(Continuous Integration) as (iOS Developer->Practical knowledge->Continuous Integration)
+(Jenkins) as (iOS Developer->Practical knowledge->Continuous Integration->Jenkins)
+(Xcode server) as (iOS Developer->Practical knowledge->Continuous Integration->Xcode server)
+(Security) as (iOS Developer->Practical knowledge->Security)
+(Keychain) as (iOS Developer->Practical knowledge->Security->Keychain)
+(Security Transforms API) as (iOS Developer->Practical knowledge->Security->Security Transforms API)
+(tvOS) as (iOS Developer->Practical knowledge->tvOS)
+(Focus interactions) as (iOS Developer->Practical knowledge->tvOS->Focus interactions)
+(WatchKit) as (iOS Developer->Practical knowledge->WatchKit)
+(Computer Science knowledge) as (iOS Developer->Computer Science knowledge) <<^>> 
+(Algorithms) as (iOS Developer->Computer Science knowledge->Algorithms) <<^>> 
+(Sorting) as (iOS Developer->Computer Science knowledge->Algorithms->Sorting) <<^>> 
+(Graph Theory) as (iOS Developer->Computer Science knowledge->Algorithms->Graph Theory) <<^>> 
+(Trees) as (iOS Developer->Computer Science knowledge->Algorithms->Graph Theory->Trees)
+(Strings) as (iOS Developer->Computer Science knowledge->Algorithms->Strings) <<^>> 
+(Greedy) as (iOS Developer->Computer Science knowledge->Algorithms->Greedy)
+(Dynamic Programming) as (iOS Developer->Computer Science knowledge->Algorithms->Dynamic Programming)
+(Bit Manipulation) as (iOS Developer->Computer Science knowledge->Algorithms->Bit Manipulation)
+(Recursion) as (iOS Developer->Computer Science knowledge->Algorithms->Recursion) <<^>> 
+(Game Theory) as (iOS Developer->Computer Science knowledge->Algorithms->Game Theory)
+(NP Complete) as (iOS Developer->Computer Science knowledge->Algorithms->NP Complete)
+(Big-O notation) as (iOS Developer->Computer Science knowledge->Algorithms->Big-O notation) <<^>> 
+(Abstract Data Types) as (iOS Developer->Computer Science knowledge->Abstract Data Types) <<^>> 
+(Stack) as (iOS Developer->Computer Science knowledge->Abstract Data Types->Stack) <<^>> 
+(Array) as (iOS Developer->Computer Science knowledge->Abstract Data Types->Array) <<^>> 
+(List) as (iOS Developer->Computer Science knowledge->Abstract Data Types->List) <<^>> 
+(Map) as (iOS Developer->Computer Science knowledge->Abstract Data Types->Map) <<^>> 
+(Multimap) as (iOS Developer->Computer Science knowledge->Abstract Data Types->Multimap)
+(Set) as (iOS Developer->Computer Science knowledge->Abstract Data Types->Set) <<^>> 
+(Multiset [Bag]) as (iOS Developer->Computer Science knowledge->Abstract Data Types->Multiset [Bag])
+(Graph) as (iOS Developer->Computer Science knowledge->Abstract Data Types->Graph) <<^>> 
+(Tree) as (iOS Developer->Computer Science knowledge->Abstract Data Types->Graph->Tree)
+(Queue) as (iOS Developer->Computer Science knowledge->Abstract Data Types->Queue) <<^>> 
+(Priority Queue) as (iOS Developer->Computer Science knowledge->Abstract Data Types->Priority Queue)
+(Double-ended priority queue) as (iOS Developer->Computer Science knowledge->Abstract Data Types->Double-ended priority queue)
+(Double-ended queue) as (iOS Developer->Computer Science knowledge->Abstract Data Types->Double-ended queue)
+(System design) as (iOS Developer->Computer Science knowledge->System design) <<^>> 
+(Problems) as (iOS Developer->Computer Science knowledge->System design->Problems)
+(Programming Paradigms) as (iOS Developer->Computer Science knowledge->Programming Paradigms)
+(Object-Oriented) as (iOS Developer->Computer Science knowledge->Programming Paradigms->Object-Oriented)
+(Functional) as (iOS Developer->Computer Science knowledge->Programming Paradigms->Functional)
+(Functional Reactive Programming Frameworks) as (iOS Developer->Computer Science knowledge->Programming Paradigms->Functional->Functional Reactive Programming Frameworks)
+(React Native) as (iOS Developer->Computer Science knowledge->Programming Paradigms->Functional->Functional Reactive Programming Frameworks->React Native)
+(RxSwift) as (iOS Developer->Computer Science knowledge->Programming Paradigms->Functional->Functional Reactive Programming Frameworks->RxSwift)
+(RxRealm, RxDataSources) as (iOS Developer->Computer Science knowledge->Programming Paradigms->Functional->Functional Reactive Programming Frameworks->RxRealm, RxDataSources)
+
+You -|> (iOS Developer)
+(iOS Developer) -down-> (iOS Developer->Practical knowledge)
+(iOS Developer->Practical knowledge) -down-> (iOS Developer->Practical knowledge->Getting started)
+(iOS Developer->Practical knowledge->Getting started) -down-> (iOS Developer->Practical knowledge->Getting started->First pet project ideas)
+(iOS Developer->Practical knowledge) -down-> (iOS Developer->Practical knowledge->Languages)
+(iOS Developer->Practical knowledge->Languages) -down-> (iOS Developer->Practical knowledge->Languages->Objective-C)
+(iOS Developer->Practical knowledge->Languages->Objective-C) -down-> (iOS Developer->Practical knowledge->Languages->Objective-C->Blocks)
+(iOS Developer->Practical knowledge->Languages->Objective-C->Blocks) -down-> (iOS Developer->Practical knowledge->Languages->Objective-C->Blocks->Memory Management)
+(iOS Developer->Practical knowledge->Languages->Objective-C) -down-> (iOS Developer->Practical knowledge->Languages->Objective-C->KVC)
+(iOS Developer->Practical knowledge->Languages->Objective-C) -down-> (iOS Developer->Practical knowledge->Languages->Objective-C->KVO)
+(iOS Developer->Practical knowledge->Languages->Objective-C) -down-> (iOS Developer->Practical knowledge->Languages->Objective-C->Toll-free bridging)
+(iOS Developer->Practical knowledge->Languages->Objective-C) -down-> (iOS Developer->Practical knowledge->Languages->Objective-C->Runtime)
+(iOS Developer->Practical knowledge->Languages->Objective-C->Runtime) -down-> (iOS Developer->Practical knowledge->Languages->Objective-C->Runtime->Method messaging)
+(iOS Developer->Practical knowledge->Languages->Objective-C->Runtime) -down-> (iOS Developer->Practical knowledge->Languages->Objective-C->Runtime->NSZombies and KVO implementation)
+(iOS Developer->Practical knowledge->Languages->Objective-C->Runtime) -down-> (iOS Developer->Practical knowledge->Languages->Objective-C->Runtime->Swizzling)
+(iOS Developer->Practical knowledge->Languages) -down-> (iOS Developer->Practical knowledge->Languages->Swift)
+(iOS Developer->Practical knowledge->Languages->Swift) -down-> (iOS Developer->Practical knowledge->Languages->Swift->Closures)
+(iOS Developer->Practical knowledge->Languages->Swift) -down-> (iOS Developer->Practical knowledge->Languages->Swift->Initializers)
+(iOS Developer->Practical knowledge->Languages->Swift) -down-> (iOS Developer->Practical knowledge->Languages->Swift->Generics)
+(iOS Developer->Practical knowledge->Languages->Swift) -down-> (iOS Developer->Practical knowledge->Languages->Swift->Protocols)
+(iOS Developer->Practical knowledge->Languages->Swift) -down-> (iOS Developer->Practical knowledge->Languages->Swift->Structs)
+(iOS Developer->Practical knowledge->Languages->Swift) -down-> (iOS Developer->Practical knowledge->Languages->Swift->Enums)
+(iOS Developer->Practical knowledge->Languages->Swift) -down-> (iOS Developer->Practical knowledge->Languages->Swift->Runtime)
+(iOS Developer->Practical knowledge->Languages->Swift->Runtime) -down-> (iOS Developer->Practical knowledge->Languages->Swift->Runtime->Method dispatch)
+(iOS Developer->Practical knowledge) -down-> (iOS Developer->Practical knowledge->Memory management)
+(iOS Developer->Practical knowledge->Memory management) -down-> (iOS Developer->Practical knowledge->Memory management->Stack and Heap)
+(iOS Developer->Practical knowledge->Memory management) -down-> (iOS Developer->Practical knowledge->Memory management->Value vs Reference type)
+(iOS Developer->Practical knowledge->Memory management) -down-> (iOS Developer->Practical knowledge->Memory management->MRC)
+(iOS Developer->Practical knowledge->Memory management) -down-> (iOS Developer->Practical knowledge->Memory management->ARC)
+(iOS Developer->Practical knowledge->Memory management->ARC) -down-> (iOS Developer->Practical knowledge->Memory management->ARC->Weak references)
+(iOS Developer->Practical knowledge->Memory management) -down-> (iOS Developer->Practical knowledge->Memory management->Retain cycles)
+(iOS Developer->Practical knowledge->Memory management) -down-> (iOS Developer->Practical knowledge->Memory management->Garbage collection)
+(iOS Developer->Practical knowledge->Memory management) -down-> (iOS Developer->Practical knowledge->Memory management->Memory leaks)
+(iOS Developer->Practical knowledge->Memory management) -down-> (iOS Developer->Practical knowledge->Memory management->Shallow and deep copying)
+(iOS Developer->Practical knowledge->Memory management) -down-> (iOS Developer->Practical knowledge->Memory management->Autorelease pool)
+(iOS Developer->Practical knowledge) -down-> (iOS Developer->Practical knowledge->Multithreading and concurrency)
+(iOS Developer->Practical knowledge->Multithreading and concurrency) -down-> (iOS Developer->Practical knowledge->Multithreading and concurrency->POSIX and NSThreads)
+(iOS Developer->Practical knowledge->Multithreading and concurrency) -down-> (iOS Developer->Practical knowledge->Multithreading and concurrency->Perform selector family)
+(iOS Developer->Practical knowledge->Multithreading and concurrency) -down-> (iOS Developer->Practical knowledge->Multithreading and concurrency->GCD)
+(iOS Developer->Practical knowledge->Multithreading and concurrency) -down-> (iOS Developer->Practical knowledge->Multithreading and concurrency->NSOperation[Queue])
+(iOS Developer->Practical knowledge->Multithreading and concurrency) -down-> (iOS Developer->Practical knowledge->Multithreading and concurrency->Runloop)
+(iOS Developer->Practical knowledge->Multithreading and concurrency) -down-> (iOS Developer->Practical knowledge->Multithreading and concurrency->Synchronization)
+(iOS Developer->Practical knowledge->Multithreading and concurrency) -down-> (iOS Developer->Practical knowledge->Multithreading and concurrency->Problems)
+(iOS Developer->Practical knowledge->Multithreading and concurrency->Problems) -down-> (iOS Developer->Practical knowledge->Multithreading and concurrency->Problems->Race condition)
+(iOS Developer->Practical knowledge->Multithreading and concurrency->Problems) -down-> (iOS Developer->Practical knowledge->Multithreading and concurrency->Problems->Deadlock)
+(iOS Developer->Practical knowledge->Multithreading and concurrency->Problems) -down-> (iOS Developer->Practical knowledge->Multithreading and concurrency->Problems->Readers–writers problem)
+(iOS Developer->Practical knowledge) -down-> (iOS Developer->Practical knowledge->Cocoa Touch)
+(iOS Developer->Practical knowledge->Cocoa Touch) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->UIKit)
+(iOS Developer->Practical knowledge->Cocoa Touch->UIKit) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->UIApplication)
+(iOS Developer->Practical knowledge->Cocoa Touch->UIKit->UIApplication) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->UIApplication->States)
+(iOS Developer->Practical knowledge->Cocoa Touch->UIKit->UIApplication) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->UIApplication->UIApplicationDelegate)
+(iOS Developer->Practical knowledge->Cocoa Touch->UIKit) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->UIViews)
+(iOS Developer->Practical knowledge->Cocoa Touch->UIKit->UIViews) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->UIViews->UITableViews)
+(iOS Developer->Practical knowledge->Cocoa Touch->UIKit->UIViews) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->UIViews->UICollectionViews)
+(iOS Developer->Practical knowledge->Cocoa Touch->UIKit) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->Layers)
+(iOS Developer->Practical knowledge->Cocoa Touch->UIKit) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->Layout)
+(iOS Developer->Practical knowledge->Cocoa Touch->UIKit->Layout) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->Layout->Frame-based)
+(iOS Developer->Practical knowledge->Cocoa Touch->UIKit->Layout) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->Layout->Autolayout)
+(iOS Developer->Practical knowledge->Cocoa Touch->UIKit->Layout->Autolayout) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->Layout->Autolayout->UIStackView)
+(iOS Developer->Practical knowledge->Cocoa Touch->UIKit) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->Animations)
+(iOS Developer->Practical knowledge->Cocoa Touch->UIKit) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->Transform)
+(iOS Developer->Practical knowledge->Cocoa Touch->UIKit) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->Navigation)
+(iOS Developer->Practical knowledge->Cocoa Touch->UIKit) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->UIViewController)
+(iOS Developer->Practical knowledge->Cocoa Touch->UIKit->UIViewController) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->UIKit->UIViewController->Lifecycle)
+(iOS Developer->Practical knowledge->Cocoa Touch) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->Foundation)
+(iOS Developer->Practical knowledge->Cocoa Touch->Foundation) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->Foundation->Notifications vs Delegation vs Observing)
+(iOS Developer->Practical knowledge->Cocoa Touch->Foundation) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->Foundation->Collections)
+(iOS Developer->Practical knowledge->Cocoa Touch->Foundation) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->Foundation->Networking)
+(iOS Developer->Practical knowledge->Cocoa Touch->Foundation) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->Foundation->Serialization)
+(iOS Developer->Practical knowledge->Cocoa Touch->Foundation->Serialization) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->Foundation->Serialization->NSCoding)
+(iOS Developer->Practical knowledge->Cocoa Touch->Foundation->Serialization) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->Foundation->Serialization->Codable)
+(iOS Developer->Practical knowledge->Cocoa Touch->Foundation->Serialization) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->Foundation->Serialization->JSON)
+(iOS Developer->Practical knowledge->Cocoa Touch->Foundation->Serialization) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->Foundation->Serialization->XML)
+(iOS Developer->Practical knowledge->Cocoa Touch->Foundation->Serialization) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->Foundation->Serialization->Protobuf)
+(iOS Developer->Practical knowledge->Cocoa Touch) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->UserNotifications)
+(iOS Developer->Practical knowledge->Cocoa Touch) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->Core Location)
+(iOS Developer->Practical knowledge->Cocoa Touch) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->Core Motion)
+(iOS Developer->Practical knowledge->Cocoa Touch) -down-> (iOS Developer->Practical knowledge->Cocoa Touch->Work in background mode)
+(iOS Developer->Practical knowledge) -down-> (iOS Developer->Practical knowledge->Software Architecture)
+(iOS Developer->Practical knowledge->Software Architecture) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Abstract Factory)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Abstract Factory) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Abstract Factory->Class cluster)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Adapter)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Command Pattern)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Chain of Responsibility)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Decorator)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Decorator) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Decorator->Delegation)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Decorator) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Decorator->Categories)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Facade)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Memento)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Observer)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Proxy)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Receptionist)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Singleton)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->Template Method)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Cocoa->MVC)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Architectural)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Architectural) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Architectural->MVC)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Architectural) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Architectural->MVVM)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Architectural) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Architectural->MVP)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Architectural) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Architectural->Clean architecture)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Architectural->Clean architecture) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Architectural->Clean architecture->VIPER)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Architectural->Clean architecture) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Architectural->Clean architecture->RIBs)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Architectural) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Architectural->Coordinators)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Creational)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Creational) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Creational->Factory)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Creational) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Creational->Abstract Factory)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Creational) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Creational->Builder)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Creational) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Creational->Factory Method)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Creational) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Creational->Object Pool)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Creational) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Creational->Prototype)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Creational) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Creational->Singleton)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Structural)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Structural) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Structural->Adapter)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Structural) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Structural->Bridge)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Structural) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Structural->Composite)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Structural) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Structural->Decorator)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Structural) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Structural->Facade)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Structural) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Structural->Flyweight)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Structural) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Structural->Proxy)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural->Command)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural->Chain of responsibility)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural->Interpreter)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural->Iterator)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural->Mediator)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural->Memento)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural->Observer)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural->State)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural->Strategy)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Behavioural->Visitor)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Concurrency)
+(iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Concurrency) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Patterns->Concurrency->Anti-pattern)
+(iOS Developer->Practical knowledge->Software Architecture) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Principles)
+(iOS Developer->Practical knowledge->Software Architecture->Design Principles) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Principles->SOLID)
+(iOS Developer->Practical knowledge->Software Architecture->Design Principles) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Principles->Inversion of Control)
+(iOS Developer->Practical knowledge->Software Architecture->Design Principles->Inversion of Control) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Principles->Inversion of Control->Dependency Injection)
+(iOS Developer->Practical knowledge->Software Architecture->Design Principles->Inversion of Control) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Principles->Inversion of Control->Service Locator)
+(iOS Developer->Practical knowledge->Software Architecture->Design Principles) -down-> (iOS Developer->Practical knowledge->Software Architecture->Design Principles->Protocol-Oriented Programming)
+(iOS Developer->Practical knowledge) -down-> (iOS Developer->Practical knowledge->Dependencies management)
+(iOS Developer->Practical knowledge->Dependencies management) -down-> (iOS Developer->Practical knowledge->Dependencies management->Cocoapods)
+(iOS Developer->Practical knowledge->Dependencies management) -down-> (iOS Developer->Practical knowledge->Dependencies management->Carthage)
+(iOS Developer->Practical knowledge->Dependencies management) -down-> (iOS Developer->Practical knowledge->Dependencies management->Swift Package Manager)
+(iOS Developer->Practical knowledge) -down-> (iOS Developer->Practical knowledge->Project structure and File/Group organisation)
+(iOS Developer->Practical knowledge) -down-> (iOS Developer->Practical knowledge->Version Control Systems)
+(iOS Developer->Practical knowledge->Version Control Systems) -down-> (iOS Developer->Practical knowledge->Version Control Systems->Git)
+(iOS Developer->Practical knowledge) -down-> (iOS Developer->Practical knowledge->Debugging)
+(iOS Developer->Practical knowledge->Debugging) -down-> (iOS Developer->Practical knowledge->Debugging->Instruments)
+(iOS Developer->Practical knowledge->Debugging) -down-> (iOS Developer->Practical knowledge->Debugging->Best practices)
+(iOS Developer->Practical knowledge->Debugging->Best practices) -down-> (iOS Developer->Practical knowledge->Debugging->Best practices->Checklists)
+(iOS Developer->Practical knowledge) -down-> (iOS Developer->Practical knowledge->UX)
+(iOS Developer->Practical knowledge) -down-> (iOS Developer->Practical knowledge->Caching and Persistency)
+(iOS Developer->Practical knowledge->Caching and Persistency) -down-> (iOS Developer->Practical knowledge->Caching and Persistency->Core Data)
+(iOS Developer->Practical knowledge->Caching and Persistency) -down-> (iOS Developer->Practical knowledge->Caching and Persistency->Realm)
+(iOS Developer->Practical knowledge->Caching and Persistency) -down-> (iOS Developer->Practical knowledge->Caching and Persistency->YAPDatabase)
+(iOS Developer->Practical knowledge) -down-> (iOS Developer->Practical knowledge->Testing)
+(iOS Developer->Practical knowledge->Testing) -down-> (iOS Developer->Practical knowledge->Testing->Unit Tests)
+(iOS Developer->Practical knowledge->Testing) -down-> (iOS Developer->Practical knowledge->Testing->Snapshot Tests)
+(iOS Developer->Practical knowledge->Testing) -down-> (iOS Developer->Practical knowledge->Testing->Functional test)
+(iOS Developer->Practical knowledge->Testing) -down-> (iOS Developer->Practical knowledge->Testing->TDD)
+(iOS Developer->Practical knowledge->Testing) -down-> (iOS Developer->Practical knowledge->Testing->BDD)
+(iOS Developer->Practical knowledge) -down-> (iOS Developer->Practical knowledge->Performance optimization)
+(iOS Developer->Practical knowledge->Performance optimization) -down-> (iOS Developer->Practical knowledge->Performance optimization->Increase FPS)
+(iOS Developer->Practical knowledge->Performance optimization) -down-> (iOS Developer->Practical knowledge->Performance optimization->Decrease memory footprint)
+(iOS Developer->Practical knowledge) -down-> (iOS Developer->Practical knowledge->Code signing)
+(iOS Developer->Practical knowledge) -down-> (iOS Developer->Practical knowledge->Tools)
+(iOS Developer->Practical knowledge->Tools) -down-> (iOS Developer->Practical knowledge->Tools->IDE)
+(iOS Developer->Practical knowledge->Tools->IDE) -down-> (iOS Developer->Practical knowledge->Tools->IDE->Xcode)
+(iOS Developer->Practical knowledge->Tools->IDE->Xcode) -down-> (iOS Developer->Practical knowledge->Tools->IDE->Xcode->Interface Builder)
+(iOS Developer->Practical knowledge->Tools) -down-> (iOS Developer->Practical knowledge->Tools->Swiftlint)
+(iOS Developer->Practical knowledge->Tools) -down-> (iOS Developer->Practical knowledge->Tools->Sourcery)
+(iOS Developer->Practical knowledge->Tools) -down-> (iOS Developer->Practical knowledge->Tools->Fastlane)
+(iOS Developer->Practical knowledge) -down-> (iOS Developer->Practical knowledge->Continuous Integration)
+(iOS Developer->Practical knowledge->Continuous Integration) -down-> (iOS Developer->Practical knowledge->Continuous Integration->Jenkins)
+(iOS Developer->Practical knowledge->Continuous Integration) -down-> (iOS Developer->Practical knowledge->Continuous Integration->Xcode server)
+(iOS Developer->Practical knowledge) -down-> (iOS Developer->Practical knowledge->Security)
+(iOS Developer->Practical knowledge->Security) -down-> (iOS Developer->Practical knowledge->Security->Keychain)
+(iOS Developer->Practical knowledge->Security) -down-> (iOS Developer->Practical knowledge->Security->Security Transforms API)
+(iOS Developer->Practical knowledge) -down-> (iOS Developer->Practical knowledge->tvOS)
+(iOS Developer->Practical knowledge->tvOS) -down-> (iOS Developer->Practical knowledge->tvOS->Focus interactions)
+(iOS Developer->Practical knowledge) -down-> (iOS Developer->Practical knowledge->WatchKit)
+(iOS Developer) -up-> (iOS Developer->Computer Science knowledge)
+(iOS Developer->Computer Science knowledge) -up-> (iOS Developer->Computer Science knowledge->Algorithms)
+(iOS Developer->Computer Science knowledge->Algorithms) -up-> (iOS Developer->Computer Science knowledge->Algorithms->Sorting)
+(iOS Developer->Computer Science knowledge->Algorithms) -up-> (iOS Developer->Computer Science knowledge->Algorithms->Graph Theory)
+(iOS Developer->Computer Science knowledge->Algorithms->Graph Theory) -up-> (iOS Developer->Computer Science knowledge->Algorithms->Graph Theory->Trees)
+(iOS Developer->Computer Science knowledge->Algorithms) -up-> (iOS Developer->Computer Science knowledge->Algorithms->Strings)
+(iOS Developer->Computer Science knowledge->Algorithms) -up-> (iOS Developer->Computer Science knowledge->Algorithms->Greedy)
+(iOS Developer->Computer Science knowledge->Algorithms) -up-> (iOS Developer->Computer Science knowledge->Algorithms->Dynamic Programming)
+(iOS Developer->Computer Science knowledge->Algorithms) -up-> (iOS Developer->Computer Science knowledge->Algorithms->Bit Manipulation)
+(iOS Developer->Computer Science knowledge->Algorithms) -up-> (iOS Developer->Computer Science knowledge->Algorithms->Recursion)
+(iOS Developer->Computer Science knowledge->Algorithms) -up-> (iOS Developer->Computer Science knowledge->Algorithms->Game Theory)
+(iOS Developer->Computer Science knowledge->Algorithms) -up-> (iOS Developer->Computer Science knowledge->Algorithms->NP Complete)
+(iOS Developer->Computer Science knowledge->Algorithms) -up-> (iOS Developer->Computer Science knowledge->Algorithms->Big-O notation)
+(iOS Developer->Computer Science knowledge) -up-> (iOS Developer->Computer Science knowledge->Abstract Data Types)
+(iOS Developer->Computer Science knowledge->Abstract Data Types) -up-> (iOS Developer->Computer Science knowledge->Abstract Data Types->Stack)
+(iOS Developer->Computer Science knowledge->Abstract Data Types) -up-> (iOS Developer->Computer Science knowledge->Abstract Data Types->Array)
+(iOS Developer->Computer Science knowledge->Abstract Data Types) -up-> (iOS Developer->Computer Science knowledge->Abstract Data Types->List)
+(iOS Developer->Computer Science knowledge->Abstract Data Types) -up-> (iOS Developer->Computer Science knowledge->Abstract Data Types->Map)
+(iOS Developer->Computer Science knowledge->Abstract Data Types) -up-> (iOS Developer->Computer Science knowledge->Abstract Data Types->Multimap)
+(iOS Developer->Computer Science knowledge->Abstract Data Types) -up-> (iOS Developer->Computer Science knowledge->Abstract Data Types->Set)
+(iOS Developer->Computer Science knowledge->Abstract Data Types) -up-> (iOS Developer->Computer Science knowledge->Abstract Data Types->Multiset [Bag])
+(iOS Developer->Computer Science knowledge->Abstract Data Types) -up-> (iOS Developer->Computer Science knowledge->Abstract Data Types->Graph)
+(iOS Developer->Computer Science knowledge->Abstract Data Types->Graph) -up-> (iOS Developer->Computer Science knowledge->Abstract Data Types->Graph->Tree)
+(iOS Developer->Computer Science knowledge->Abstract Data Types) -up-> (iOS Developer->Computer Science knowledge->Abstract Data Types->Queue)
+(iOS Developer->Computer Science knowledge->Abstract Data Types) -up-> (iOS Developer->Computer Science knowledge->Abstract Data Types->Priority Queue)
+(iOS Developer->Computer Science knowledge->Abstract Data Types) -up-> (iOS Developer->Computer Science knowledge->Abstract Data Types->Double-ended priority queue)
+(iOS Developer->Computer Science knowledge->Abstract Data Types) -up-> (iOS Developer->Computer Science knowledge->Abstract Data Types->Double-ended queue)
+(iOS Developer->Computer Science knowledge) -up-> (iOS Developer->Computer Science knowledge->System design)
+(iOS Developer->Computer Science knowledge->System design) -up-> (iOS Developer->Computer Science knowledge->System design->Problems)
+(iOS Developer->Computer Science knowledge) -up-> (iOS Developer->Computer Science knowledge->Programming Paradigms)
+(iOS Developer->Computer Science knowledge->Programming Paradigms) -up-> (iOS Developer->Computer Science knowledge->Programming Paradigms->Object-Oriented)
+(iOS Developer->Computer Science knowledge->Programming Paradigms) -up-> (iOS Developer->Computer Science knowledge->Programming Paradigms->Functional)
+(iOS Developer->Computer Science knowledge->Programming Paradigms->Functional) -up-> (iOS Developer->Computer Science knowledge->Programming Paradigms->Functional->Functional Reactive Programming Frameworks)
+(iOS Developer->Computer Science knowledge->Programming Paradigms->Functional->Functional Reactive Programming Frameworks) -up-> (iOS Developer->Computer Science knowledge->Programming Paradigms->Functional->Functional Reactive Programming Frameworks->React Native)
+(iOS Developer->Computer Science knowledge->Programming Paradigms->Functional->Functional Reactive Programming Frameworks) -up-> (iOS Developer->Computer Science knowledge->Programming Paradigms->Functional->Functional Reactive Programming Frameworks->RxSwift)
+(iOS Developer->Computer Science knowledge->Programming Paradigms->Functional->Functional Reactive Programming Frameworks) -up-> (iOS Developer->Computer Science knowledge->Programming Paradigms->Functional->Functional Reactive Programming Frameworks->RxRealm, RxDataSources)
+
+skinparam Shadowing false
+skinparam Padding 0
+skinparam BackgroundColor White
+
+skinparam Actor {
+    BackgroundColor #F5F0F2
+    BorderColor #17468A
+    FontColor #E12D53
+    FontName Helvetica
+    FontSize 30
+    FontStyle Bold
+}
+
+skinparam Arrow {
+    Thickness 3
+    Color #17468A
+}
+
+skinparam usecase {
+    BorderThickness 3
+    BackgroundColor #F5F0F2
+    BorderColor #17468A
+    FontColor #E12D53
+    FontName Helvetica
+    FontStyle Bold
+    FontSize 20
+}
+legend right
+<<^>> - for essential topics
+endlegend
+@enduml
